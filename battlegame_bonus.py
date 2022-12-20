@@ -19,13 +19,13 @@ dragon_hp = 300
 dragon_damage = 50
 
 #Loop for Character selection below
-#Keep characters inside loop, so it keeps the ability to re-enter your choice in the inginite loop.
+#Keep characters inside loop, so it keeps the ability to re-enter your choice in the infinite loop.
 while True:
     print('1. wizard')
     print('2. elf')
     print('3. human')
     print('4. Witch')
-    character= input("Choose Your Character:").lower()
+    character= input("Choose Your Character:")
     if character == "1":
         character = wizard
         my_damage= wizard_damage
