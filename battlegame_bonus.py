@@ -26,22 +26,22 @@ while True:
     print('3. human')
     print('4. Witch')
     character= input("Choose Your Character:")
-    if character == "1":
+    if character == "1" or character.lower() == "wizard":
         character = wizard
         my_damage= wizard_damage
         my_hp = wizard_hp
         break
-    elif character == "2":
+    elif character == "2" or character.lower() == "elf":
         character = elf
         my_damage = elf_damage
         my_hp = elf_hp       
         break
-    elif character == "3":
+    elif character == "3" or character.lower() == "human":
         character = human
         my_damage = human_damage
         my_hp = human_hp      
         break
-    elif character == "4":
+    elif character == "4" or character.lower() == "witch":
         character = witch
         my_damage = witch_damage
         my_hp = witch_hp
