@@ -10,32 +10,45 @@ elf_hp = 100
 human = "Human"
 human_hp = 150
 human_damage = 20
+#witch
+witch = "Witch"
+witch_hp = 150
+witch_damage = 100
 #dragon
 dragon_hp = 300
 dragon_damage = 50
 
 #Loop for Character selection below
-#Keep characters inside loop, so it keeps the ability to re-enter your choice in the inginite loop.
+#Keep characters inside loop, so it keeps the ability to re-enter your choice in the infinite loop.   
 while True:
-    print('1. wizard')
-    print('2. elf')
-    print('3. human')
+    print('1. Wizard')
+    print('2. Elf')
+    print('3. Human')
+    print('4. Witch')
+    print('5. EXIT')
     character= input("Choose Your Character:")
-    if character == "1":
+    if character == "1" or character.lower() == "wizard":
         character = wizard
         my_damage= wizard_damage
         my_hp = wizard_hp
         break
-    elif character == "2":
+    elif character == "2" or character.lower() == "elf":
         character = elf
         my_damage = elf_damage
         my_hp = elf_hp       
         break
-    elif character == "3":
+    elif character == "3" or character.lower() == "human":
         character = human
         my_damage = human_damage
         my_hp = human_hp      
         break
+    elif character == "4" or character.lower() == "witch":
+        character = witch
+        my_damage = witch_damage
+        my_hp = witch_hp
+        break
+    elif character == '5' or character.lower() == "exit":
+        quit()
     else:
         print("Unknown Character")
 print("You have chosen: " + character)
